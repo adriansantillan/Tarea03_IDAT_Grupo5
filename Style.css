@@ -1,0 +1,126 @@
+body{
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 8% 8% 76% 8%;
+    gap: 10px;
+
+}
+
+header{
+    grid-column: 1/5;
+    border: solid black;
+    display: grid;
+    grid-auto-columns: 10fr;
+    background-color: blue;
+    color: white;
+    font-family: Verdana, Geneva, sans-serif;
+}
+
+header #sistema_integrado{
+    grid-column: 1/8;
+    justify-self: center;
+    align-self: start;
+    padding-bottom: 10px;
+}
+
+header #foto{
+    grid-column: 8/9;
+    justify-self: end;   
+    align-self: center;
+    padding-bottom: 20px;
+}
+
+header #usuario{
+    grid-column: 9/10;
+    justify-self: center;
+    align-self: start;
+    
+}
+
+nav{
+    grid-column: 1/5;
+    border: solid black;
+    display: grid;
+    justify-content: end;
+}
+
+main{
+    border: solid black;
+    background-color: lightblue;
+    color: black;
+    font-family: Courier New, Courier, monospace;
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+    
+}
+
+main h1{
+    padding-left: 90px;
+}
+
+main button{
+    width: 250px;
+    height: 100px;
+}
+
+aside{
+    background-color: lightblue;
+    color: black;
+    font-family: Courier New, Courier, monospace;
+    grid-column: 2/5;
+    border: solid black;
+    padding: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+footer{
+    grid-column: 1/5;
+    border: solid black;
+    background-color: cornflowerblue;
+    color: black;
+    display: grid;
+    grid-auto-columns: 3fr;
+    align-items: center;
+    justify-items: center;
+}
+
+footer #que_hacemos{
+    grid-column: 1/2;
+}
+
+footer #enlaces{
+    grid-column: 2/3;
+}
+
+footer #contáctanos{
+    grid-column: 3/4;
+}
+
+header img{
+    width: 50px;
+    height: 50px;
+    clip-path: circle(50%);
+    opacity: 0.6;
+}
+
+nav img{
+    width: 30px;
+    height: 30px;
+}
+
+main button img{
+    width: 30px;
+    height: 30px;
+}
+
+aside img{
+    width: 30px;
+    height: 30px;
+}
+
+textarea {
+    resize: none;
+}
