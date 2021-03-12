@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tarea1_Santillan</title>
+    <title>Tarea3_Grupo05</title>
     <link rel="stylesheet" href="Style.css">
 </head>
 <body>
@@ -18,7 +18,7 @@
             <span>
                 
             <label>
-                    Usuario
+                    usuario 1
             </label>
 
             </span>
@@ -44,10 +44,11 @@
          
                
                 
-                   <li id="boton1"><img      src="imagenes/cruz.jpg" alt="Simbolo de suma para agregar producto"><br><label for="agregar_producto">Agregar producto</label> <!--
-	            --><li id="boton2"><img  src="imagenes/lápiz.png" alt="Simbolo de datos para existencias"><br><label fot="administrar_categorías">Administrar categorías</label><!--
-	            --><li id="boton3"><img  src="imagenes/base de datos.png" alt="Simbolo de datos para existencias"><br><label for="existencias">Existencias</label><!--
-	            --><li id="boton4"><img        src="imagenes/tarjeta.png" alt="Simbolo de tarjeta para administrar pagos"><br><label for="administrar_pagos">Administrar pagos</label><!---->
+                   <li id="boton1"><img      src="imagenes/icono_banco.jpg" alt="Icono de Inicio"><label for="inicio">Inicio</label> <!--
+	            --><li id="boton2"><img  src="imagenes/icono_usuario.png" alt="Icono de usuario"><label fot="usuarios">Usuarios</label><!--
+	            --><li id="boton3"><img  src="imagenes/icono_clientes.png" alt="Icono de clientes"><label for="clientes">Clientes</label><!--
+                --><li id="boton4"><img        src="imagenes/base de datos.png" alt="Icono de proveedores"><label for="proveedores">Proveedores</label><!--
+                --><li id="boton5"><img        src="imagenes/icono_codigoqr.jpg" alt="Icono de productos"><label for="productos">Productos</label><!---->    
                
             </ul>
             
@@ -56,12 +57,13 @@
                     <label for="buscador">Buscar en la web</label>
                     <input type="search" id="inputbuscador" placeholder="Buscar">
             
-                    <button id="botonbuscar"  >
+                    <button id="botonbuscar">
                     <input type="image" id="lupa" src="imagenes/lupa.png" >
-                    <label for="textoboton"> buscar</label>
+                    <br>
+                    <label for="textoboton">Buscar</label>
                     </button>
                 <li>  
-                </ul> 
+                 
             
             </ul>
             
@@ -70,13 +72,14 @@
     <main>
        
         <fieldset>
-            <legend>Agregar Producto</legend>
-            <form id="formain">
+        <legend>Agregar Producto</legend>
+        <form id="formain">
             <label for="código">Código* </label>
             <span id="span1">
             <input type="tel" id="código" placeholder="Solo números" pattern="[0-9]{6}" title="Debes ingresar 6 números" required>
            <button type="submit" id=validar value="Validar">Validar</button></span>
-
+            <br>
+            <br>
            <label for="nombre">Nombre*</label>
             <input type="text" id="nombre" placeholder="Solo letras y números" pattern="[a-zA-Z0-9]{2,100}" title="Debes ingresar solo letras y números" required>
             <br>
@@ -121,12 +124,15 @@
            <label for="impuesto">Afecto a impuesto*</label>
            <input type="checkbox" id="impuesto" required>
            <br>
+           <br>
            
            <label for="foto">Foto</label>
            <input type="file" id="foto" accept="image/png , image/jpg">
            <br>
+           <br>
            <label for="descripción">Descripción</label>
            <textarea id="descripción"></textarea>
+           <br>
            <br>
            <span id="span2">
             <button type="submit" value="grabar">Grabar</button>
