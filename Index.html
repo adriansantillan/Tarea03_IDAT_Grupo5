@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/edde6265f2.js" crossorigin="anonymous"></script>
     <title>Tarea3_Grupo05</title>
     <link rel="stylesheet" href="Style.css">
 </head>
@@ -38,31 +39,32 @@
                     </span>
         </ul>            
 
-                
-
-            <ul id="ulnav">
-         
-               
-                
-                   <li id="boton1"><img      src="imagenes/icono_banco.jpg" alt="Icono de Inicio"><label for="inicio">Inicio</label> <!--
-	            --><li id="boton2"><img  src="imagenes/icono_usuario.png" alt="Icono de usuario"><label fot="usuarios">Usuarios</label><!--
-	            --><li id="boton3"><img  src="imagenes/icono_clientes.png" alt="Icono de clientes"><label for="clientes">Clientes</label><!--
-                --><li id="boton4"><img        src="imagenes/base de datos.png" alt="Icono de proveedores"><label for="proveedores">Proveedores</label><!--
-                --><li id="boton5"><img        src="imagenes/icono_codigoqr.jpg" alt="Icono de productos"><label for="productos">Productos</label><!---->    
-               
-            </ul>
+       
+   
             
             <ul id="ulnav2">   
-                <li id="formbuscar">
-                    <label for="buscador">Buscar en la web</label>
-                    <input type="search" id="inputbuscador" placeholder="Buscar">
-            
-                    <button id="botonbuscar">
-                    <input type="image" id="lupa" src="imagenes/lupa.png" >
-                    <br>
-                    <label for="textoboton">Buscar</label>
-                    </button>
-                <li>  
+
+                
+                <nav class="nav-container" style="justify-content: flex-end;    width: 100%;">
+                    <div class="image-container">
+                        <img src="imagenes/usuario.jpeg" class="estilo-elias" alt="imagencircular">
+                    </div>
+                    <div>
+                        <form class="form-inline"  action="/action_page.php">
+                            <div class="form-group">
+                                <div class="form-control">
+                                    <input   type="text" placeholder="Busqueda en la web">
+                                </div>
+                                <div class="btn-buscar">
+                                    <button class=""  type="submit" >Buscar</button>
+                                </div>
+                                
+                            </div>
+                        
+                    
+                    </form>
+                    </div>
+                </nav>  
                  
             
             </ul>
@@ -70,7 +72,30 @@
     </nav>
 
     <main>
-       
+            <div class="contenedor">
+                <div class="menu">
+            <h2>Menu</h2>
+            <br>
+            <!--br>
+            <div type="button" class="prueba-animacion"> <i class="fa fa-plus-circle" aria-hidden="true"></i> Agregar Producto </div>
+            <br-->
+            <br>
+            <button type="button" class="btn-gloria"> <i class="fa fa-plus-circle" aria-hidden="true"></i> Agregar Producto </button>
+            <br>
+            <br>
+            <button type="button" class="btn-gloria"> <i class="fa fa-pencil-square" aria-hidden="true"></i> Administrar Categorias</button>
+            <br>
+            <br>
+            <button type="button" class="btn-gloria"> <i class="fa fa-database" aria-hidden="true"></i> Existencias </button>
+            <br>
+            <br>
+            <button type="button" class="btn-gloria"> <i class="fa fa-credit-card-alt" aria-hidden="true"></i> Administrar Pagos </button>
+      
+      
+            <hr class="d-sm-none">
+          </div>   
+
+       <div class=formulario>
         <fieldset>
         <legend>Agregar Producto</legend>
         <form id="formain">
@@ -139,7 +164,9 @@
             <button type="reset" value="limpiar">Limpiar</button></span>
         </form>
         </fieldset>
-
+    </div>
+</div>
+        
 
         
     </main>
