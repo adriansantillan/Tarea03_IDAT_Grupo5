@@ -9,86 +9,74 @@
 <body>
     <header>
             
-            <div id="sistema_integrado">
-                <h2>Sistema integrado de gestión</h2>
-            </div>
+            
+            <h1 id="sistema_integrado">Sistema integrado de gestión</h1>
+            
 
-            <div id="foto">
-            <img id="usuario" src="Imagenes/usuario.jpg" alt="Foto del usuario">
-            </div>
+            <div id="usuariocabecera">
+            <img class="usuario" src="imagenes/usuario.jpg" alt="Foto del usuario">
+            <span>
+                
+            <label>
+                    Usuario
+            </label>
 
-            <div id="usuario">
-                <p>
-                    Usuario 1
-                </p>
+            </span>
             </div>
                    
     </header>
 
     <nav>
-        <form>
-            <label for="texto_buscar">Buscar en la web</label>
-            <input type="search" id="texto_buscar">
-            <button>
-                <img id="buscar" src="Imagenes/lupa.png" alt="Lupa del boton buscador">
-                <br>
-                <label for="buscar">BUSCAR</label>
-            </button>
-        </form>
+        <button id="botonoculto">&#9776;</button>
+        <ul id="navmovil">
+        <li id="botonuser"><img class="usuario" src="imagenes/usuario.jpg" alt="Foto del usuario">
+                        
+                    <label>
+                            Usuario 1
+                    </label>
+        
+                    </span>
+        </ul>            
 
+                
+
+            <ul id="ulnav">
+         
+               
+                
+                   <li id="boton1"><img      src="imagenes/cruz.jpg" alt="Simbolo de suma para agregar producto"><br><label for="agregar_producto">Agregar producto</label> <!--
+	            --><li id="boton2"><img  src="imagenes/lápiz.png" alt="Simbolo de datos para existencias"><br><label fot="administrar_categorías">Administrar categorías</label><!--
+	            --><li id="boton3"><img  src="imagenes/base de datos.png" alt="Simbolo de datos para existencias"><br><label for="existencias">Existencias</label><!--
+	            --><li id="boton4"><img        src="imagenes/tarjeta.png" alt="Simbolo de tarjeta para administrar pagos"><br><label for="administrar_pagos">Administrar pagos</label><!---->
+               
+            </ul>
+            
+            <ul id="ulnav2">   
+                <li id="formbuscar">
+                    <label for="buscador">Buscar en la web</label>
+                    <input type="search" id="inputbuscador" placeholder="Buscar">
+            
+                    <button id="botonbuscar"  >
+                    <input type="image" id="lupa" src="imagenes/lupa.png" >
+                    <label for="textoboton"> buscar</label>
+                    </button>
+                <li>  
+                </ul> 
+            
+            </ul>
+            
     </nav>
 
     <main>
-            <article>
-            <h1>
-                Menú
-            </h1>
-            </article>
-
-            <article>
-                <button>
-                    <label for="agregar_producto">Agregar producto</label>
-                    <br>
-                    <img id="agregar" src="Imagenes/cruz.jpg" alt="Simbolo de suma para agregar producto">
-                </button>
-            </article>
-            
-            <article>
-                <button>
-                    <label for="administrar_categorías">Administrar categorías</label>
-                    <br>
-                    <img id="administrar" src="Imagenes/lápiz.png" alt="Simbolo de lapiz para administrar categorias">
-                </button>
-            </article>
-            
-            <article>
-                <button>
-                    <label for="existencias">Existencias</label>
-                    <br>
-                    <img id="existencias" src="Imagenes/base de datos.png" alt="Simbolo de datos para existencias">
-                </button>
-            </article>
-            
-            <article>
-                <button>
-                    <label for="administrar_pagos">Administrar pagos</label>
-                    <br>
-                    <img id="pagos" src="Imagenes/tarjeta.png" alt="Simbolo de tarjeta para administrar pagos">
-                </button>
-            </article>
-        
-    </main>
-
-    <aside>
-        <form>
+       
         <fieldset>
             <legend>Agregar Producto</legend>
-
+            <form id="formain">
             <label for="código">Código* </label>
+            <span id="span1">
             <input type="tel" id="código" placeholder="Solo números" pattern="[0-9]{6}" title="Debes ingresar 6 números" required>
-           <button type="submit" value="Validar">Validar</button>
-           <br>
-           <br>
+           <button type="submit" id=validar value="Validar">Validar</button></span>
+
            <label for="nombre">Nombre*</label>
             <input type="text" id="nombre" placeholder="Solo letras y números" pattern="[a-zA-Z0-9]{2,100}" title="Debes ingresar solo letras y números" required>
             <br>
@@ -136,35 +124,34 @@
            
            <label for="foto">Foto</label>
            <input type="file" id="foto" accept="image/png , image/jpg">
-           <img id="foto" src="Imagenes/foto.png" alt="Símbolo de fotografia">
-           <br>
            <br>
            <label for="descripción">Descripción</label>
            <textarea id="descripción"></textarea>
            <br>
-            <br>
+           <span id="span2">
             <button type="submit" value="grabar">Grabar</button>
-            <button type="reset" value="limpiar">Limpiar</button>
+            <button type="reset" value="limpiar">Limpiar</button></span>
+        </form>
         </fieldset>
 
 
-        </form>
-    </aside>
+        
+    </main>
 
     <footer>
-        <article id="que_hacemos">
+        <div id="que_hacemos" >
             <a href="#">¿Qué hacemos?</a>
-        </article>
-        <article id="enlaces">
+        </div>
+        <div id="enlaces">
             <a href="#">
                 Enlaces principales
             </a>
-        </article>
-        <article id="contáctanos">
+        </div>
+        <div id="contáctanos">
             <a href="#">
                 Contáctanos
             </a>
-        </article>
+        </div>
 
     </footer>
 
