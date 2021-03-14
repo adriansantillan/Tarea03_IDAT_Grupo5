@@ -1,504 +1,407 @@
+@charset "UTF-8";
+header {
+  grid-column: 1/5;
+  border: solid black;
+  display: grid;
+  grid-auto-columns: 4fr;
+  grid-template-columns: 15% 20% 40% auto;
+  background-color: blue;
+  color: white;
+  font-family: Verdana, Geneva, sans-serif;
+}
+header #sistema_integrado {
+  display: grid;
+  grid-column: 3/4;
+  justify-self: start;
+  align-content: center;
+  padding-bottom: 10px;
+}
+header #usuariocabecera {
+  grid-column: 4/5;
+  justify-self: center;
+  align-self: center;
+}
+header img {
+  width: 50px;
+  height: 50px;
+  clip-path: circle(50%);
+  opacity: 0.6;
+}
 
-    body{
-        
-        display: grid;
-        height: 100%;
-        width: 100%;
-        grid-template-columns: 1fr auto auto 1fr;
-        grid-template-rows: 15% auto auto 8%;
-        gap: 10px;
+nav {
+  grid-column: 1/5;
+  border: solid black;
+  padding: 0px;
+  margin: 0px;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr auto;
+  grid-template-columns: 70% auto;
+  padding: 0px;
+  margin: 0px;
+  /*nav1*/
+  /*nav2*/
+}
+nav .navmovil .oculto button {
+  visibility: hidden;
+  display: none;
+}
+nav .navmovil ul li {
+  width: 100%;
+  border-right: black solid 1px;
+}
+nav .navmovil ul {
+  padding: 0;
+  margin: 0;
+  align-self: center;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  list-style-type: none;
+  width: 100%;
+}
+nav .navmovil ul #botonuser {
+  visibility: hidden;
+  display: none;
+}
+nav .navmovil ul #boton5 {
+  visibility: hidden;
+  display: none;
+}
+nav .ulnav2 ul {
+  padding: 0;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  list-style-type: none;
+  height: 100%;
+}
+nav .ulnav2 li #lupa {
+  width: 20px;
+  height: 20px;
+}
+nav img {
+  width: 30px;
+  height: 30px;
+}
 
-    }
+main {
+  grid-column: 1/5;
+  border: solid black;
+  background-color: lightblue;
+  color: black;
+  font-family: Courier New, Courier, monospace;
+  display: grid;
+  gap: 10px;
+  justify-content: center;
+}
+main fieldset {
+  width: 50vw;
+  display: grid;
+}
+main #formain {
+  justify-content: center;
+}
+main #span1 button {
+  justify-content: stretch;
+  width: 190px;
+  height: 20px;
+}
+main #span2 {
+  text-align: center;
+}
+main #span2 > button {
+  width: 180px;
+}
 
-    header{
-        grid-column: 1/5;
-        border: solid black;
-        display: grid;
-        grid-auto-columns: 4fr;
-        grid-template-columns:15% 20% 40% auto;
-        background-color: blue;
-        color: white;
-    
-        font-family: Verdana, Geneva, sans-serif;
-    }
+footer {
+  grid-column: 1/5;
+  border: solid black;
+  background-color: cornflowerblue;
+  color: black;
+  display: grid;
+  grid-auto-columns: 3fr;
+  align-items: center;
+  justify-items: center;
+}
+footer #que_hacemos {
+  grid-column: 1/2;
+}
+footer #enlaces {
+  grid-column: 2/3;
+}
+footer #contáctanos {
+  grid-column: 3/4;
+}
 
-    header #sistema_integrado{
-        display: grid;
-        grid-column: 3/4;
-        justify-self: start;
-        align-content: center;
-        padding-bottom: 10px;
-    }
+body {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: 1fr auto auto 1fr;
+  grid-template-rows: 15% auto auto 8%;
+  gap: 10px;
+}
 
+textarea {
+  resize: none;
+}
 
-
-        #usuariocabecera{
-        grid-column: 4/5;
-        justify-self: center;
-        align-self: center;
-    
-        
-    }
-
-
-    nav{
-        
-        grid-column: 1/5;
-        border: solid black; 
-        padding: 0px; 
-        margin: 0px;  
-        display: grid;
-        
-        grid-template-rows: 1fr;
-        grid-template-columns: 1fr auto ;
-        grid-template-columns: 70% auto;
-    
-    
-        padding:0px;
-        margin: 0px;
-    }
-    /*nav1*/
-    nav .navmovil .oculto button
-    {
-    visibility: hidden;
-    display: none;
-    
-    }
-   
-    nav .navmovil ul li 
-    {
-        width: 100%;
-        border-right: black solid 1px;
-    }
-    nav  .navmovil ul
-    {
-        padding: 0;
-        margin: 0;
-        align-self: center;
-        justify-content: center;
-        display:flex;
-        text-align: center;
-        list-style-type: none;
-        width: 100%;
-       
-    }
-    nav .navmovil ul #botonuser
-    {
-
-        visibility: hidden;
-        display: none;
-    }
-    nav .navmovil ul #boton5
-    {
-
-        visibility: hidden;
-        display: none;
-    }
-    
-/*nav2*/
-    nav  .ulnav2 ul
-    {
-        padding: 0;
-        margin: 0;
-        align-items: center;
-        justify-content: center;
-        display:flex;
-        
-        text-align: center; 
-        list-style-type: none;
-        height: 100%;
-    }
-
-   
-
-
-    nav .ulnav2  li #lupa
-    {
-        width: 20px;
-        height: 20px;
-    }
-
-   
-
-
-    main{
-        grid-column: 1/5;
-        border: solid black;
-        background-color: lightblue;
-        color: black;
-        font-family: Courier New, Courier, monospace;
-        display:grid;
-        gap: 10px;
-        justify-content: center;
-        
-    }
-
-    fieldset
-    {
-    width: 50vw;
+@media screen and (max-width: 370px) {
+  body {
     display: grid;
-    }
-    #formain
-    {
-        
-        justify-content: center;
-    }
+    width: 100%;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "header" "nav" "main" "footer";
+  }
 
-    main #span1     button{
-        justify-content: stretch;
-        width:190px;
-        height: 20px;
-    }
-    main #span2
-    {
-        
-        text-align: center;
-    }
-    main #span2>button
-    {
-        width:180px;
-    }
-    footer{
-        grid-column: 1/5;
-        border: solid black;
-        background-color: cornflowerblue;
-        color: black;
-        display: grid;
-        grid-auto-columns: 3fr;
-        align-items: center;
-        justify-items: center;
-    }
-
-    footer #que_hacemos{
-        grid-column: 1/2;
-    }
-
-    footer #enlaces{
-        grid-column: 2/3;
-    }
-
-    footer #contáctanos{
-        grid-column: 3/4;
-    }
-
-
-    header img{
-        width: 50px;
-        height: 50px;
-        clip-path: circle(50%);
-        opacity: 0.6;
-    }
-
-    nav img{
-        width: 30px;
-        height: 30px;
-    }
-
-
-
-    aside img{
-        width: 30px;
-        height: 30px;
-    }
-
-    textarea {
-
-        resize: none;
-    }
-
-    @media screen and (max-width:370px)
-    {
-
-    body
-    {
-        
-        display:grid;
-        width: 100%;
-    grid-template-columns:auto;
-    grid-template-rows:auto auto auto auto ;   
-    grid-template-areas: 
-                        "header"
-                        "nav"
-                        "main"
-                        "footer";
-
-    }   
-    header{
+  header {
     grid-area: header;
-        border: solid black;
-        display: block;
-        position: sticky;
-        grid-auto-columns: 2fr;
-        grid-template-columns:70% auto;
-        background-color: blue;
-        color: white;
-        font-family: Verdana, Geneva, sans-serif;
-        text-align: center;
-    }
-    
-  
-    header #sistema_integrado{
-        display: grid;
-        justify-self: center;
-        
-        align-content: center;
-        padding-bottom: 10px;
-        grid-column:1/3;
-        padding-left: 10px;
-        font-size: 15px;
-    }
-    #usuariocabecera{
-        display: none;
-        visibility: hidden;
-        
-    }
+    border: solid black;
+    display: block;
+    position: sticky;
+    grid-auto-columns: 2fr;
+    grid-template-columns: 70% auto;
+    background-color: blue;
+    color: white;
+    font-family: Verdana, Geneva, sans-serif;
+    text-align: center;
+  }
+  header #sistema_integrado {
+    display: grid;
+    justify-self: center;
+    align-content: center;
+    padding-bottom: 10px;
+    grid-column: 1/3;
+    padding-left: 10px;
+    font-size: 15px;
+  }
+  header #usuariocabecera {
+    display: none;
+    visibility: hidden;
+  }
 
-    nav{
-        grid-area: nav;
-        border: solid black;
-        grid-template-columns: 1fr;
-    
-    
+  nav {
+    grid-area: nav;
+    border: solid black;
+    grid-template-columns: 1fr;
     padding: 0px;
-    margin:0px ;
-    background-color: rgb(196, 196, 196);
+    margin: 0px;
+    background-color: #c4c4c4;
+  }
+  nav .navmovil ul {
+    margin: 0;
+    align-self: center;
+    justify-content: center;
+    display: block;
+    text-align: center;
+    list-style-type: none;
+    width: 100%;
+  }
+  nav .navmovil ul li .oculto button {
+    visibility: visible;
+    display: flex;
+    position: relative;
+  }
+  nav .navmovil ul li:hover .ulnav {
+    background-color: #2ead69;
+    display: block;
+    visibility: visible;
+  }
+  nav .ulnav {
+    position: relative;
+    background-color: red;
+    display: none;
+  }
+  nav #ulnav label {
+    text-align: end;
+  }
+  nav .divbotonoculto {
+    visibility: visible;
+    display: flex;
+  }
 
+  #formain {
+    display: grid;
+    justify-content: center;
+  }
 
-    }
-    nav  .navmovil ul
-    {
-       
-        margin: 0;
-        align-self: center;
-        justify-content: center;
-        display:block;
-        text-align: center;
-        list-style-type: none;
-        width: 100%;
-       
-    }
-    #formain
-    {
-        display:grid;
-        justify-content: center;
-    }
-    nav .navmovil ul li .oculto button
-    { visibility: visible;
-      display: flex;
-      position: relative;
-    }
-    nav .navmovil ul  li:hover .ulnav
-    {
-        background-color: rgb(46, 173, 105);
-        display: block;
-        visibility: visible;
-    }
-    nav .ulnav
-    {
-        position: relative;
-  background-color: red;
-        display: none;
-    }
- 
-    nav #ulnav label
-    {
-        text-align: end;
-    }
+  ul li {
+    display: block;
+  }
 
-    nav .divbotonoculto
-    {
-       visibility: visible;
-            display: flex;
-       
-       
-    }
-    ul li
-    {
-        display: block;
-    }
-    nav ul li {
-        
-        position: relative;/**/
-      }
-    /*pasarlo a la web*/
-    nav ul li  .ulnav li 
-    {
-        padding-top: 5px;
-        padding-bottom: 5px;
-    }
-    nav .oculto >#botonoculto 
-    { 
-       
-        background-color: rgb(0, 0, 0);
-        
-        color: rgb(255, 255, 255);
-        border: solid black 1px;
-        width: 100%;
-        height: auto;
-        justify-content: start;
-    
-    }
-    nav ul
-    {
-        display: block;
-    }
-    nav ul  li .oculto 
-    {
-        grid-column: 2/3;
-      
-    }
-   .ulnav2
-   {
-       display: none;
-       visibility: hidden;
-   }
-    nav .nav
-    {
-     
-        visibility: visible;
-        display: block;
-        position: absolute;
+  nav ul li {
+    position: relative;
+    /**/
+  }
 
-    }
-    nav .ulnav  ul #botonuser
-    {
-        justify-self: center;
-        visibility: visible;
-        display: flex;
-    }
+  /*pasarlo a la web*/
+  nav ul li .ulnav li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
 
-    nav .ulnav ul #boton5
-    {
-        justify-self: center;
-        visibility: visible;
-        display: flex;
-    }
-    nav .ulnav ul li
-    {
-        justify-self: center;
-        visibility: visible;
-        display: flex;
+  nav .oculto > #botonoculto {
+    background-color: black;
+    color: white;
+    border: solid black 1px;
+    width: 100%;
+    height: auto;
+    justify-content: start;
+  }
 
-    }
-    nav .ulnav2 #formbuscar
-    {
-        display: none;
-        visibility: hidden;
-      
-        
-    }
-   
-    legend
-    {
-        background-color: gray;
+  nav ul {
+    display: block;
+  }
+
+  nav ul li .oculto {
+    grid-column: 2/3;
+  }
+
+  .ulnav2 {
+    display: none;
+    visibility: hidden;
+  }
+
+  nav .nav {
+    visibility: visible;
+    display: block;
+    position: absolute;
+  }
+
+  nav .ulnav ul #botonuser {
+    justify-self: center;
+    visibility: visible;
+    display: flex;
+  }
+
+  nav .ulnav ul #boton5 {
+    justify-self: center;
+    visibility: visible;
+    display: flex;
+  }
+
+  nav .ulnav ul li {
+    justify-self: center;
+    visibility: visible;
+    display: flex;
+  }
+
+  nav .ulnav2 #formbuscar {
+    display: none;
+    visibility: hidden;
+  }
+
+  legend {
+    background-color: gray;
     color: white;
     padding: 2px 3px;
     font-size: 10px;
-    
-    }
-        main{
-            grid-area:main;
-                border: solid black;
-                background-color: lightblue;
-                color: black;
-                font-family: Courier New, Courier, monospace;
-                display:grid;
-                gap: 10px;
-                justify-content: center;
-                font-size: 30% ;
-                height: auto;
-                
-            }
-    main label
-    {
-    font-size: 10px ;
-    }
+  }
 
+  main {
+    grid-area: main;
+    border: solid black;
+    background-color: lightblue;
+    color: black;
+    font-family: Courier New, Courier, monospace;
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+    font-size: 30%;
+    height: auto;
+  }
 
-    fieldset legend
-    {
-        padding-top: 2px;
-    }
-    fieldset
-    {
+  main label {
+    font-size: 10px;
+  }
+
+  fieldset legend {
+    padding-top: 2px;
+  }
+
+  fieldset {
     margin-top: 1%;
-    display:grid;
+    display: grid;
     width: auto;
     height: auto;
     justify-self: center;
-    background-color: rgb(196, 196, 196);;
-    }
+    background-color: #c4c4c4;
+  }
 
-    main>fieldset>#span2
-    {
-        text-align: center;
-    }
-    main #span1     button{
-        justify-content: stretch;
-        width:130px;
-        height: 20px;
-        margin: 0px;
-    }
+  main > fieldset > #span2 {
+    text-align: center;
+  }
 
-    main #código
-    {
-        width: 40%;
-        height: 40%;
-    }
-    main>fieldset>#span1
-    {display: block;
+  main #span1 button {
+    justify-content: stretch;
+    width: 130px;
+    height: 20px;
+    margin: 0px;
+  }
+
+  main #código {
+    width: 40%;
+    height: 40%;
+  }
+
+  main > fieldset > #span1 {
+    display: block;
     margin-bottom: 0%;
     text-align: center;
     border-bottom: 1px solid black;
     height: 70px;
-    }
-   
-    main>fieldset>#span1>button
-    {
-        max-width: 27%;
-        max-height: 24%;
+  }
+
+  main > fieldset > #span1 > button {
+    max-width: 27%;
+    max-height: 24%;
     text-align: center;
     font-size: 12px;
-    }
-    main>fieldset>#span1>input
-    {
-        margin-right: 5%;
-        height: 18%;
-        width: 63.2%;
-    }
-    footer{
-        grid-area: footer;
-        border: solid black;
-        background-color: cornflowerblue;
-        color: black;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        align-items: center;
-        justify-items: center;
-    }
-    footer #que_hacemos
-    {
-        display: grid;
-        grid-column: 1/4;
-        justify-self: center;
-    }
-    footer #enlaces
-    {
-        display: grid;
-        grid-column: 1/4;
-        justify-self: center;
-    }
-    footer #contáctanos
-    {
-        display: grid;
-        grid-column: 1/4;
-        justify-self: center;
-    }
-    footer :hover
-    {
-        color: green;
-    }
-    }
-    
+  }
 
+  main > fieldset > #span1 > input {
+    margin-right: 5%;
+    height: 18%;
+    width: 63.2%;
+  }
+
+  footer {
+    grid-area: footer;
+    border: solid black;
+    background-color: cornflowerblue;
+    color: black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+
+  footer #que_hacemos {
+    display: grid;
+    grid-column: 1/4;
+    justify-self: center;
+  }
+
+  footer #enlaces {
+    display: grid;
+    grid-column: 1/4;
+    justify-self: center;
+  }
+
+  footer #contáctanos {
+    display: grid;
+    grid-column: 1/4;
+    justify-self: center;
+  }
+
+  footer :hover {
+    color: green;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
