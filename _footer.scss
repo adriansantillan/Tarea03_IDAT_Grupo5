@@ -1,0 +1,23 @@
+$border-style: solid black;
+
+footer{
+    grid-column: 1/5;
+    border: $border-style;
+    background-color: cornflowerblue;
+    color: black;
+    display: grid;
+    grid-auto-columns: 3fr;
+    align-items: center;
+    justify-items: center;
+    #que_hacemos{
+        grid-column: 1/2;
+    }
+    
+    #enlaces{
+        grid-column: 2/3;
+    }
+    
+    #contáctanos{
+        grid-column: 3/4;
+    }
+}
