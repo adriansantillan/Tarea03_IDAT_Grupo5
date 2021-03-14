@@ -68,6 +68,10 @@
     nav .navmovil ul li 
     {
         width: 100%;
+       
+    }
+    nav .navmovil ul li .ulnav ul li
+    {
         border-right: black solid 1px;
     }
     nav  .navmovil ul
@@ -206,7 +210,33 @@
         resize: none;
     }
 
-    @media screen and (max-width:370px)
+    @media screen and (max-width:870px)
+    {
+        nav .ulnav2 ul #formbuscar #inputbuscador
+    {
+        width:100px;
+    }
+    }
+@media screen and (max-width:528px)
+{
+    nav .ulnav2 ul #formbuscar #inputbuscador
+    {
+        width:50px;
+    }
+    nav .ulnav2 ul #formbuscar button label
+    {
+        display :none
+    }
+    header #sistema_integrado {
+        display: grid;
+        grid-column: 2/4;
+        justify-self: start;
+        align-content: center;
+        padding-bottom: 10px;
+    }
+}
+
+    @media screen and (max-width:420px)
     {
 
     body
@@ -431,15 +461,16 @@
 
     main>fieldset>#span2
     {
+        
         text-align: center;
     }
-    main #span1     button{
+    main #span1 button {
         justify-content: stretch;
-        width:130px;
+        width: 50%;
         height: 20px;
         margin: 0px;
+        padding: 0px;
     }
-
     main #código
     {
         width: 40%;
