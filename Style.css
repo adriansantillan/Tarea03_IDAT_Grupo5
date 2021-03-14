@@ -130,14 +130,24 @@ main fieldset {
   width: 50vw;
   display: grid;
 }
-main #formain {
-  justify-content: center;
+main #span1 input {
+  justify-content: stretch;
+  width: 40%;
+  height: 20px;
+  margin: 0px;
+  padding: 0px;
 }
 main #span1 button {
   justify-content: stretch;
-  width: 190px;
+  width: 25%;
   height: 20px;
+  margin: 0px;
+  padding: 0px;
 }
+main #formain {
+  justify-content: center;
+}
+
 main #span2 {
   text-align: center;
 }
