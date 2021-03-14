@@ -70,15 +70,23 @@ header{
     }
 }
 
-
 nav{
-    grid-area: nav;
-    border: $border-style;
-    grid-template-columns: 1fr;
-    padding: 0px;
-    margin:0px ;
-    background-color: rgb(196, 196, 196);
-    .navmovil ul
+        
+    grid-column: 1/5;
+    border: solid black; 
+    padding: 0px; 
+    margin: 0px;  
+    display: grid;
+    
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr auto ;
+    grid-template-columns: 70% auto;
+
+
+    padding:0px;
+    margin: 0px;
+} 
+ .navmovil ul
     {   
     margin: 0;
     align-self: center;
@@ -311,4 +319,4 @@ footer :hover
 {
     color: green;
 }
-}
+
