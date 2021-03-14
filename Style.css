@@ -93,6 +93,20 @@ nav img {
   height: 30px;
 }
 
+
+
+
+input[type=search] {
+  width: 30%;
+  transition: all 0.4s ease-in-out;
+}
+
+input[type=search]:focus {
+  width: 50%;
+}
+
+
+
 main {
   grid-column: 1/5;
   border: solid black;
