@@ -1,5 +1,6 @@
 $header-fontfamily: Verdana, Geneva, sans-serif;
 $border-style: solid black;
+@import 'mixins';
 
 header{
     grid-column: 1/5;
@@ -25,10 +26,5 @@ header{
     
         
     }
-    img{
-        width: 50px;
-        height: 50px;
-        clip-path: circle(50%);
-        opacity: 0.6;
-    }
+    img {@include style-img-usuariocabecera}
 }

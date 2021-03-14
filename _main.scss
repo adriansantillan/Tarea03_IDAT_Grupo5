@@ -1,15 +1,16 @@
 $border-style: solid black;
 $main-fontfamily: Courier New, Courier, monospace;
+@import 'mixins';
 
 main{
     grid-column: 1/5;
     border: $border-style;
-    background-color: lightblue;
-    color: black;
+    
     font-family: $main-fontfamily;
     display:grid;
     gap: 10px;
     justify-content: center;
+    @include style-main;
     fieldset
     {
     width: 50vw;

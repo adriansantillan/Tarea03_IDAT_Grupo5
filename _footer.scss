@@ -1,14 +1,15 @@
 $border-style: solid black;
+@import 'mixins';
 
 footer{
     grid-column: 1/5;
     border: $border-style;
-    background-color: cornflowerblue;
-    color: black;
+    
     display: grid;
     grid-auto-columns: 3fr;
     align-items: center;
     justify-items: center;
+    @include style-footer;
     #que_hacemos{
         grid-column: 1/2;
     }
