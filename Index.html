@@ -44,11 +44,12 @@
                 
                 <ul>
                     <li id="botonuser"><img  src="imagenes/usuario.jpg" alt="Simbolo de suma para agregar producto"><br><label for="agregar_producto">user</label>
-                   <li id="boton1"><img  src="imagenes/cruz.jpg" alt="Simbolo de suma para agregar producto"><br><label for="agregar_producto">Agregar producto</label> <!--
-	            --><li id="boton2"><img  src="imagenes/lápiz.png" alt="Simbolo de datos para existencias"><br><label fot="administrar_categorías">Administrar categorías</label><!--
-	            --><li id="boton3"><img  src="imagenes/base de datos.png" alt="Simbolo de datos para existencias"><br><label for="existencias">Existencias</label><!--
-	            --><li id="boton4"><img  src="imagenes/tarjeta.png" alt="Simbolo de tarjeta para administrar pagos"><br><label for="administrar_pagos">Administrar pagos</label><!--
-                --><li id="boton5"><img  src="imagenes/cruz.jpg" alt="Simbolo de suma para agregar producto"><br><label for="agregar_producto">Cerrar sesion</label>
+                    <li id="boton1" class="button button5"><i class="fa fa-plus-circle fa-2x" aria-hidden="true"></i><br><label for="agregar_producto">Agregar producto</label> 
+	                <li id="boton2" class="button button5"><i class="fa fa-pencil-square fa-2x" aria-hidden="true "></i><br><label fot="administrar_categorías">Administrar categorías</label>
+	                <li id="boton3" class="button  button5"><i class="fa fa-database fa-2x" aria-hidden="true"></i><br><label for="existencias">Existencias</label>
+	                <li id="boton4" class="button  button5"><i class="fa fa-credit-card-alt fa-2x" aria-hidden="true"></i><br><label for="administrar_pagos">Administrar pagos</label>
+                        <li id="boton4" class="button  button5"><i class="fas fa-qrcode fa-2x" aria-hidden="true"></i><br><label for="administrar_pagos">Administrar pagos</label>
+                
                 </ul>
 
                 </div>
@@ -80,14 +81,17 @@
     </nav>
 
     <main>
+        <br>
+        <br>
        <div class="formulario">
         <fieldset>
+            <br>
             <legend>Agregar Producto</legend>
             <form id="formain">
             <label for="código">Código* </label>
             <span id="span1">
             <input type="tel" id="código" placeholder="Solo números" pattern="[0-9]{6}" title="Debes ingresar 6 números" required>
-           <button type="submit" id=validar value="Validar">Validar</button></span>
+           <button type="submit" id=validar value="Validar" class="buttonForm button2">Validar</button></span>
             <br>  
             <br>   
            <label for="nombre">Nombre*</label>
@@ -136,8 +140,10 @@
            <input type="checkbox" id="impuesto" required>
            <br>
            <br>
-           <label for="foto">Foto</label>
+           <label for="foto">Foto  </label>
+           <i class="fa fa-picture-o" aria-hidden="true"></i>
            <input type="file" id="foto" accept="image/png , image/jpg">
+          
            <br> 
            <br>
            <label for="descripción">Descripción</label>
@@ -149,6 +155,8 @@
             <button type="reset" value="limpiar">Limpiar</button></span>
         </form>
         </fieldset>
+        <br>
+        <br>
 
     </div>
         
