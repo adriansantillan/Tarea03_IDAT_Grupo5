@@ -111,7 +111,7 @@
             <form id="formain">
             <label id="lacodigo" for="código">Código* </label>
             <span id="span1">
-            <input type="tel" id="código" placeholder="Solo números" pattern="[0-9]{6}" title="Debes ingresar 6 números" required>
+            <input type="tel" id="código" placeholder="Solo números" maxlength="6" pattern="[0-9]{6}" title="Debes ingresar 6 números" required>
            <button type="submit" id=validar value="Validar" class="buttonForm button2">Validar</button></span>
             <br>  
             <br>   
@@ -120,7 +120,7 @@
             <br>
            <br>
            <label for="abreviatura">Abreviatura</label>
-           <input type="text" id="abreviatura" maxlength="10" placeholder="Solo letras" pattern="[a-zA-Z]{2,10}" title="Debes ingresar solo letras">
+           <input type="text" id="abreviatura" maxlength="10" placeholder="Solo letras" pattern="[a-zA-Z]{2,10}" title="Debes ingresar solo letras" required>
            <br>
            <br>
           <label for="categoría">Categoría*</label>
@@ -132,7 +132,7 @@
           <br>
            <br>
            <label for="ruc">RUC Proveedor*</label>
-           <input type=tel id="ruc" placeholder="Solo números" pattern="[0-9]{11}" title="Debes ingresar 11 números" required>
+           <input type=tel id="ruc" placeholder="Solo números" pattern="[0-9]{11}" maxlength="11" title="Debes ingresar 11 números" required>
            <br>
            <br>
            <label for="precio">Precio*</label>

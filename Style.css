@@ -260,6 +260,16 @@ main #span2 > button {
   width: 180px;
   margin: 0.5%;
 }
+main fieldset input:required:focus:valid {
+  background: url("https://assets.digitalocean.com/labs/icons/hand-thumbs-up.svg") no-repeat 95% 50% #9EEB00;
+  background-size: 18px;
+  border-color: green;
+}
+main fieldset input:required:focus:invalid {
+  background: url("https://assets.digitalocean.com/labs/icons/exclamation-triangle-fill.svg") no-repeat 95% 50% #FF5240;
+  background-size: 18px;
+  border-color: red;
+}
 main #formain #categoría
 {
   width: 177px;
@@ -278,9 +288,9 @@ main #formain label {
   width: 100px;
 }
 
-main #span2 > button {
-  /*width: 180px;*/
-}
+/* main #span2 > button {
+  width: 180px;
+} */
 
 footer {
   grid-column: 1/5;
