@@ -460,7 +460,7 @@ main #formain  #foto {
 }
   main #formain  #foto {
     margin-left: 15px;
-    width: 100%;
+    width:80%;
   }
   main #span1 input {
     justify-content: stretch;
@@ -545,5 +545,18 @@ main #span1 input {
     }
 }
     
-    
+@media screen and (max-width:360px)
+{
+  .menu-movil {
+    background-color: black;
+    position: absolute;
+    top: 342px;
+    left: 8px;
+    width: 40%;
+    display: none;
+    visibility: hidden;
+    opacity: 66%;
+    padding: 15px 0px 15px 15px;
+}
+}
 }
