@@ -279,12 +279,12 @@ nav .item-menu-movil i {
   }
 }
 main {
-  background-image: url(../Tarea03_IDAT_Grupo5/Imagenes/fondo.jpg);
+  background-image: url(../Imagenes/fondo.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  color: white;
+  color: rgb(5, 4, 4);
   grid-column: 1/5;
   border: solid black;
   font-family: Courier New, Courier, monospace;
