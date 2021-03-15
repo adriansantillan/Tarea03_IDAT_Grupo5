@@ -1,24 +1,21 @@
 $border-style: solid black;
 @import 'mixins';
 
-footer{
+footer {
     grid-column: 1/5;
     border: $border-style;
-    
     display: grid;
     grid-auto-columns: 3fr;
     align-items: center;
     justify-items: center;
     @include style-footer;
-    #que_hacemos{
-        grid-column: 1/2;
+    #que_hacemos {
+      grid-column: 1/2;
     }
-    
-    #enlaces{
-        grid-column: 2/3;
+    #enlaces {
+      grid-column: 2/3;
     }
-    
-    #contáctanos{
-        grid-column: 3/4;
+    #contáctanos {
+      grid-column: 3/4;
     }
-}
+  }

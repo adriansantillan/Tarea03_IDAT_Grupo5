@@ -4,9 +4,12 @@
     clip-path: circle(50%);
     opacity: 0.6;
 }
-@mixin style-main {
-    background-color: lightblue;
-    color: black;    
+@mixin style-background-main {
+    background-image: url(../Tarea03_IDAT_Grupo5/Imagenes/fondo.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;    
 }
 @mixin style-footer {
     background-color: cornflowerblue;

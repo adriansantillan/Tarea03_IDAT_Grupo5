@@ -12,7 +12,7 @@
     <header>
             
            
-            <h1 id="sistema_integrado">Sistema integrado de gestión</h1>
+            <h1 id="titulo">Sistema integrado de gestión</h1>
             
 
             <div id="usuariocabecera">
@@ -26,8 +26,8 @@
        
     </header>
     <nav>
-        <div id="menu-amburguesa">
-            <button class="boton-amburguesa">
+        <div id="menu-hamburguesa">
+            <button class="boton-hamburguesa">
                 <i class="fas fa-bars"></i>
             </button>
             <div class="menu-movil">
@@ -89,17 +89,12 @@
                     <input type="search" id="inputbuscador" placeholder="Buscar">
             
                     <button id="botonbuscar"  >
-                        <i class="fas fa-search" aria-hidden="true"></i>
-                        
-                    <!--input type="image" id="lupa" src="imagenes/lupa.png" -->
-                    <!--label for="textoboton"> buscar</label-->
+                        <i class="fas fa-search" aria-hidden="true"></i>    
                     </button>
-                
             </ul>
         </div>
                 
     </nav>
-
 
     <main>
         <br>
@@ -109,78 +104,76 @@
             <br>
             <legend>Agregar Producto</legend>
             <form id="formain">
-            <label id="lacodigo" for="código">Código* </label>
-            <span id="span1">
-            <input type="tel" id="código" placeholder="Solo números" maxlength="6" pattern="[0-9]{6}" title="Debes ingresar 6 números" required>
-           <button type="submit" id=validar value="Validar" class="buttonForm button2">Validar</button></span>
-            <br>  
-            <br>   
-           <label for="nombre">Nombre*</label>
-            <input type="text" id="nombre" placeholder="Solo letras y números" pattern="[a-zA-Z0-9]{2,100}" title="Debes ingresar solo letras y números" required>
-            <br>
-           <br>
-           <label for="abreviatura">Abreviatura</label>
-           <input type="text" id="abreviatura" maxlength="10" placeholder="Solo letras" pattern="[a-zA-Z]{2,10}" title="Debes ingresar solo letras" required>
-           <br>
-           <br>
-          <label for="categoría">Categoría*</label>
-          <select id="categoría" required>
-              <option value="categoría">Lácteos</option>
-              <option value="categoría">Panes especiales</option>
-              <option value="categoría">Pasteles</option>
-          </select>
-          <br>
-           <br>
-           <label for="ruc">RUC Proveedor*</label>
-           <input type=tel id="ruc" placeholder="Solo números" pattern="[0-9]{11}" maxlength="11" title="Debes ingresar 11 números" required>
-           <br>
-           <br>
-           <label for="precio">Precio*</label>
-           <input type="number" id="precio" step="0.01" title="Solo números decimales con 2 dígitos" required>
-           <br>
-           <br>
-           <label for="color_etiqueta">Color de etiqueta</label>
-           <input type="color" id="color_etiqueta">
-           <br>
-           <br>
-           <label for="fecha">Fecha*</label>
-           <input type="date" id="fecha" required>
-           <br>
-           <br>
-           <label for="estado">Estado*</label>
-           <br>
-           <label for="activo">Activo</label>
-           <input type="radio" id="activo" name="estado" required>
-           <label for="Suspendido">Suspendido</label>
-           <input type="radio" id="Suspendido" name="estado">
-           <label for="De baja">De baja</label>
-           <input type="radio" id="De baja" name="estado">
-           <br>
-           <br>
-           <label for="impuesto">Afecto a impuesto*</label>
-           <input type="checkbox" id="impuesto" required>
-           <br>
-           <br>
-           <label for="foto">Foto  </label>
-           
-           <input type="file" id="foto" accept="image/png , image/jpg">
-          
-           <br> 
-           <br>
-           <label for="descripción">Descripción</label>
-           <textarea id="descripción"></textarea>
-           <br>
-           <br>
-           <span id="span2">
-            <button type="submit" value="grabar" class="buttonForm button2">Grabar</button>
-            <button type="reset" value="limpiar" class="buttonForm button2">Limpiar</button></span>
-        </form>
+                <label id="lacodigo" for="código">Código* </label>
+                <span id="span1">
+                    <input type="tel" id="código" placeholder="Solo números" maxlength="6" pattern="[0-9]{6}" title="Debes ingresar 6 números" required>
+                    <button type="submit" id=validar value="Validar" class="buttonForm button2">Validar</button>
+                </span>
+                <br>  
+                <br>   
+                <label for="nombre">Nombre*</label>
+                <input type="text" id="nombre" placeholder="Solo letras y números" pattern="[a-zA-Z0-9]{2,100}" title="Debes ingresar solo letras y números" required>
+                <br>
+                <br>
+                <label for="abreviatura">Abreviatura</label>
+                <input type="text" id="abreviatura" maxlength="10" placeholder="Solo letras" pattern="[a-zA-Z]{2,10}" title="Debes ingresar solo letras" required>
+                <br>
+                <br>
+                <label for="categoría">Categoría*</label>
+                <select id="categoría" required>
+                <option value="categoría">Lácteos</option>
+                <option value="categoría">Panes especiales</option>
+                <option value="categoría">Pasteles</option>
+                </select>
+                <br>
+                <br>
+                <label for="ruc">RUC Proveedor*</label>
+                <input type=tel id="ruc" placeholder="Solo números" pattern="[0-9]{11}" maxlength="11" title="Debes ingresar 11 números" required>
+                <br>
+                <br>
+                <label for="precio">Precio*</label>
+                <input type="number" id="precio" step="0.01" title="Solo números decimales con 2 dígitos" required>
+                <br>
+                <br>
+                <label for="color_etiqueta">Color de etiqueta</label>
+                <input type="color" id="color_etiqueta">
+                <br>
+                <br>
+                <label for="fecha">Fecha*</label>
+                <input type="date" id="fecha" required>
+                <br>
+                <br>
+                <label for="estado">Estado*</label>
+                <br>
+                <label for="activo">Activo</label>
+                <input type="radio" id="activo" name="estado" required>
+                <label for="Suspendido">Suspendido</label>
+                <input type="radio" id="Suspendido" name="estado">
+                <label for="De baja">De baja</label>
+                <input type="radio" id="De baja" name="estado">
+                <br>
+                <br>
+                <label for="impuesto">Afecto a impuesto*</label>
+                <input type="checkbox" id="impuesto" required>
+                <br>
+                <br>
+                <label for="foto">Foto  </label>
+                <input type="file" id="foto" accept="image/png , image/jpg">
+                <br> 
+                <br>
+                <label for="descripción">Descripción</label>
+                <textarea id="descripción"></textarea>
+                <br>
+                <br>
+                <span id="span2">
+                    <button type="submit" value="grabar" class="buttonForm button2">Grabar</button>
+                    <button type="reset" value="limpiar" class="buttonForm button2">Limpiar</button>
+                </span>
+            </form>
         </fieldset>
         <br>
         <br>
-
-    </div>
-        
+        </div>
     </main>
 
     <footer>
