@@ -349,177 +349,201 @@ textarea {
 }
 
 @media screen and (max-width:870px)
-{   
-    .navmovil{
-      display: none;
-      visibility: hidden;
-    }
 
-    #menu-amburguesa{
-      display: inline-block;
-      visibility: visible;
-      margin: 12%;
-    }
+{.navmovil{
+  display: none;
+  visibility: hidden;
+}
 
-    #menu-amburguesa .boton-amburguesa:hover {
-      background-color: rgb(0, 0, 0);
-      color: white;
-    }
+#menu-amburguesa{
+  display: inline-block;
+  visibility: visible;
+  margin: 12%;
+}
 
-    #menu-amburguesa .boton-amburguesa:hover + div.menu-movil, #menu-amburguesa .menu-movil:hover{
-      
-      display: block;
-      visibility: visible;                                          
-    }
+#menu-amburguesa .boton-amburguesa:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+#menu-amburguesa .boton-amburguesa:hover + div.menu-movil, #menu-amburguesa .menu-movil:hover{
+  
+  display: block;
+  visibility: visible;                                          
+}
 
 /*me cortaste :'c*/
 
 
 
 
-    .ulnav2{
-      padding: 2%;
-    }
+.ulnav2{
+  padding: 2%;
+}
 
 
-    #inputbuscador {
-      width: 30%;
-      transition: all 0.4s ease-in-out;
-    }
-    
-    #inputbuscador:focus {
-      width: 50%;
-    }
+#inputbuscador {
+  width: 30%;
+  transition: all 0.4s ease-in-out;
+}
 
-    nav {
-        grid-column: 1/5;
-        border: solid black;
-        padding: 0px;
-        margin: 0px;
-        display: grid;
-        grid-template-rows: 1fr;
-        grid-template-columns: auto 95% ;
-        padding: 0px;
-        margin: 0px;
-    }
-    main fieldset {
-      width: 85vw;
-      display: grid;
-    }
-    main #formain  #foto {
-      margin-left: 15px;
-      width: 55%;
-    }
-    
+#inputbuscador:focus {
+  width: 50%;
+}
+
+nav {
+    grid-column: 1/5;
+    border: solid black;
+    padding: 0px;
+    margin: 0px;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: auto 95% ;
+    padding: 0px;
+    margin: 0px;
+}
+main fieldset {
+  width: 85vw;
+  display: grid;
+}
+main #formain  #foto {
+  margin-left: 15px;
+  width: 55%;
+}
+
 }
 
 @media screen and (max-width:528px)
 {
-    #inputbuscador
-    {
-        width:30%;
-    }
-    
-
-    #inputbuscador:focus {
-      width: 50%;
-    }
-
-    nav .ulnav2 ul #formbuscar button label
-    {
-        display :none
-    }
-    header #sistema_integrado {
-        display: grid;
-        grid-column: 2/4;
-        justify-self: start;
-        align-content: center;
-        padding-bottom: 10px;
-    }
-    main #span1 input {
-      justify-content: stretch;
-      width: 20%;
-      height: 20px;
-      margin: 0px;
-      padding: 0px;
-    }
-    main #formain #categoría
+   
+  #inputbuscador
   {
-    margin-left: 15px;
-    
+      width:30%;
   }
-    main #formain  #foto {
-      margin-left: 15px;
-      width: 100%;
-    }
-    main #span1 input {
-      justify-content: stretch;
-      width: 20%;
-      height: 20px;
-      margin: 0px;
-      padding: 0px;
-      margin-left: 15px;
-  }
-  main #span1 input {
-    justify-content: stretch;
-    width: 20%;
-    height: 20px;
-    margin: 0px;
-    padding: 0px;
-    margin-left: 15px;
-}
-    main #span1 button {
-     
-      width: auto;
-      height: auto;
-      margin-left: 2px; 
-  }
-  .menu-movil {
-    
-    width: 30%;
   
-  }
-  @media screen and (max-width:446px)
-{
 
+  #inputbuscador:focus {
+    width: 50%;
+  }
+
+  nav .ulnav2 ul #formbuscar button label
+  {
+      display :none
+  }
+  header #sistema_integrado {
+      display: grid;
+      grid-column: 2/4;
+      justify-self: start;
+      align-content: center;
+      padding-bottom: 10px;
+  }
   main #span1 input {
     justify-content: stretch;
     width: 20%;
     height: 20px;
     margin: 0px;
     padding: 0px;
-    margin-left: 0px;
+  }
+  main #formain label {
+    margin-left: 5%;
+    display: inline-block;
+    width: auto;
 }
-main #span1  {
+  main #formain {
+    justify-content: stretch;
+    display: grid;
+}
+  main #formain #categoría
+{
+  margin-left: 15px;
+  
+}
+  main #formain  #foto {
+    margin-left: 15px;
+    width: 100%;
+  }
+  main #span1 input {
+    justify-content: stretch;
+    width: 20%;
+    height: 20px;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 15px;
+}
+main #span1 input {
   justify-content: stretch;
   width: 20%;
   height: 20px;
   margin: 0px;
   padding: 0px;
-  margin-left: 0px;
+  margin-left: 15px;
+}
+  main #span1 button {
+    width: 35%;
+    height: 25px;
+    
+    margin-left: 2px; 
+}
+.menu-movil {
   
-}
-main #formain label {
-  margin-left: 10%;
-  display: inline-block;
-  width: 90px;
-}
+  width: 30%;
 
-  .menu-movil {
-    background-color: black;
-    position: absolute;
-   
-    top: 270px;
-    left: 8px;
-    width: 40%;
-    display: none;
-    visibility: hidden;
-    opacity: 66%;
-    padding: 15px 0px 15px 15px;
+}
+  @media screen and (max-width:446px)
+{
+  
+
+    main #span1 input {
+      justify-content: stretch;
+      width: 30%;
+      height: 20px;
+      margin: 0px;
+      padding: 0px;
+      margin-left: 0px;
   }
-
-}
+  main #span1 button {
+    justify-content: stretch;
+    width: 35%;
+    height: 25px;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 0px;
+  }
+  main #span1  {
+    justify-content: stretch;
+    width: auto;
+    height: 20px;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 15px;
+    
+  }
+  main #span2 > button {
+    width: 45%;
+    margin: 0.5%;
+  }
+  main #formain #fecha {
+    width: 172px;
+  }
+  main #formain label {
+    margin-left: 5%;
+    display: inline-block;
+    width: auto;
+  }
+  
+    .menu-movil {
+      background-color: black;
+      position: absolute;
+     
+      top: 270px;
+      left: 8px;
+      width: 40%;
+      display: none;
+      visibility: hidden;
+      opacity: 66%;
+      padding: 15px 0px 15px 15px;
+    }
 }
     
     
-
+}
