@@ -233,11 +233,12 @@ main fieldset {
 }
 main #span1 input {
   justify-content: stretch;
-  width: 40%;
+  width: 30%;
   height: 20px;
   margin: 0px;
   padding: 0px;
 }
+
 main #span1 button {
   justify-content: stretch;
   width: 25%;
@@ -248,10 +249,35 @@ main #span1 button {
 main #formain {
   justify-content: center;
 }
-
+main #formain  #foto {
+  width: 60%;
+}
 main #span2 {
+  display: block;
   text-align: center;
 }
+main #span2 > button {
+  width: 180px;
+  margin: 0.5%;
+}
+main #formain #categoría
+{
+  width: 177px;
+  margin-left: 15px;
+}
+main #formain #fecha
+{
+  width: 177px;
+}
+main #formain input {
+  margin-left: 15px;
+}
+main #formain label {
+  margin-left: 10%;
+  display: inline-block;
+  width: 100px;
+}
+
 main #span2 > button {
   /*width: 180px;*/
 }
@@ -286,22 +312,22 @@ body {
 }
 
 textarea {
+  margin-left: 15px;
   resize: none;
 }
 
-.menu-movil{
-  background-color: black;
-  position: absolute;
-  z-index: 2;
-  top: 177px;
-  left: 8px;
-  width: 70%;
-  display: none;
-  visibility: hidden;
-  padding: 15px 0px 15px 15px;
-  /*height: ;*/
-
-}
+  .menu-movil {
+    background-color: black;
+    position: absolute;
+    z-index: 2;
+    top: 260px;
+    left: 8px;
+    width: 25%;
+    display: none;
+    visibility: hidden;
+    opacity: 70%;
+    padding: 15px 0px 15px 15px;
+  }
 .item-menu-movil{
   color: white;
   font-weight: bolder;
@@ -326,7 +352,8 @@ textarea {
     }
 
     #menu-amburguesa .boton-amburguesa:hover {
-      background-color: yellow;
+      background-color: rgb(0, 0, 0);
+      color: white;
     }
 
     #menu-amburguesa .boton-amburguesa:hover + div.menu-movil, #menu-amburguesa .menu-movil:hover{
@@ -365,6 +392,14 @@ textarea {
         padding: 0px;
         margin: 0px;
     }
+    main fieldset {
+      width: 85vw;
+      display: grid;
+    }
+    main #formain  #foto {
+      margin-left: 15px;
+      width: 55%;
+    }
     
 }
 
@@ -374,6 +409,7 @@ textarea {
     {
         width:30%;
     }
+    
 
     #inputbuscador:focus {
       width: 50%;
@@ -390,4 +426,90 @@ textarea {
         align-content: center;
         padding-bottom: 10px;
     }
+    main #span1 input {
+      justify-content: stretch;
+      width: 20%;
+      height: 20px;
+      margin: 0px;
+      padding: 0px;
+    }
+    main #formain #categoría
+  {
+    margin-left: 15px;
+    
+  }
+    main #formain  #foto {
+      margin-left: 15px;
+      width: 100%;
+    }
+    main #span1 input {
+      justify-content: stretch;
+      width: 20%;
+      height: 20px;
+      margin: 0px;
+      padding: 0px;
+      margin-left: 15px;
+  }
+  main #span1 input {
+    justify-content: stretch;
+    width: 20%;
+    height: 20px;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 15px;
 }
+    main #span1 button {
+     
+      width: auto;
+      height: auto;
+      margin-left: 2px; 
+  }
+  .menu-movil {
+    
+    width: 30%;
+  
+  }
+  @media screen and (max-width:446px)
+{
+
+  main #span1 input {
+    justify-content: stretch;
+    width: 20%;
+    height: 20px;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 0px;
+}
+main #span1  {
+  justify-content: stretch;
+  width: 20%;
+  height: 20px;
+  margin: 0px;
+  padding: 0px;
+  margin-left: 0px;
+  
+}
+main #formain label {
+  margin-left: 10%;
+  display: inline-block;
+  width: 90px;
+}
+
+  .menu-movil {
+    background-color: black;
+    position: absolute;
+   
+    top: 270px;
+    left: 8px;
+    width: 40%;
+    display: none;
+    visibility: hidden;
+    opacity: 66%;
+    padding: 15px 0px 15px 15px;
+  }
+
+}
+}
+    
+    
+
