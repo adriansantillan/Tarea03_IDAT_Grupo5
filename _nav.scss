@@ -130,7 +130,7 @@ nav{
           from {background-color: #008CBA;}
           to {background-color: black;}
       }
-      .menu-movil {
+       .menu-movil {
           background-color: black;
           position: absolute;
           z-index: 2;
@@ -151,20 +151,27 @@ nav{
       .item-menu-movil i{
         margin-right: 15px;
       }
+
+  
 }
 
   @media screen and (max-width: $breakpoint-larger-tablet)
   {
-      .navmovil{
+    
+     nav .navmovil{
     display: none;
     visibility: hidden;
       }
   
-      #menu-hamburguesa{
+     nav #menu-hamburguesa{
     display: inline-block;
     visibility: visible;
     margin: 12%;
       }
+      nav .navmovil{
+        display: none;
+        visibility: hidden;
+          }
   
       #menu-hamburguesa .boton-hamburguesa:hover {
     background-color: rgb(0, 0, 0);
@@ -177,8 +184,9 @@ nav{
     visibility: visible;                                          
       }
   
-      .ulnav2{
+     nav .ulnav2{
     padding: 2%;
+    display: inline-block;
       }
   
   
@@ -198,7 +206,7 @@ nav{
       margin: 0px;
       display: grid;
       grid-template-rows: 1fr;
-      grid-template-columns: auto 95% ;
+      grid-template-columns: auto 90% ;
       padding: 0px;
       margin: 0px;
       }
@@ -221,27 +229,35 @@ nav{
     {
         display :none
     }
-    .menu-movil {
-    
+    nav .menu-movil {
+      top: 330px;
         width: 30%;
-    
+        width: 49%;
+        opacity: 80%;
     }
+
+  
+       
     }
 
     @media screen and (max-width: $breakpoint-smartphone)
 {  
-.menu-movil {
-      background-color: black;
-      position: absolute;
+nav .menu-movil {
+     left: 8px;
+      width: 49%;
+      opacity: 80%;
+      top: 330px;
+      }
+    nav .ulnav2  ul #formbuscar label
+        {
+          display: none;
+          visibility: hidden;
+        }
+        nav .ulnav2  ul #formbuscar input
+        {
+          width: 40%;
+        }
      
-      top: 270px;
-      left: 8px;
-      width: 40%;
-      display: none;
-      visibility: hidden;
-      opacity: 66%;
-      padding: 15px 0px 15px 15px;
-    }
 }
     
     @media screen and (max-width: $breakpoint-smaller-smartphone)
@@ -257,5 +273,6 @@ nav{
         opacity: 66%;
         padding: 15px 0px 15px 15px;
         }
+        
         
     }

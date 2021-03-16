@@ -7,7 +7,7 @@ $breakpoint-smartphone: 446px;
 
 main {
     @include style-background-main;
-    color: white;
+    color: rgb(3, 3, 3);
     grid-column: 1/5;
     border: $border-style;
     font-family: $main-fontfamily;
@@ -60,10 +60,11 @@ main {
     #span1 button {
       justify-content: stretch;
       width: 25%;
-      height: 20px;
-      margin: 0px;
+      height: 26  px;
+      margin-left: 2px;
       padding: 0px;
     }
+   
     #formain {
       justify-content: center;
     }
@@ -79,14 +80,14 @@ main {
       margin: 0.5%;
     }
     fieldset input:required:focus:valid {
-      background: url("https://assets.digitalocean.com/labs/icons/hand-thumbs-up.svg") no-repeat 95% 50% #9EEB00;
+      background: url("https://assets.digitalocean.com/labs/icons/hand-thumbs-up.svg") no-repeat 95% 50% #e3ffaa;
       background-size: 18px;
       border-color: green;
     }
     fieldset input:required:focus:invalid {
-      background: url("https://assets.digitalocean.com/labs/icons/exclamation-triangle-fill.svg") no-repeat 95% 50% #FF5240;
+      background: url("https://assets.digitalocean.com/labs/icons/exclamation-triangle-fill.svg") no-repeat 95% 50% #ffaea6;
       background-size: 18px;
-      border-color: red;
+      border-color: rgb(201, 182, 18);
     }
     #formain #categoría
     {
@@ -109,6 +110,7 @@ main {
       margin-left: 15px;
       resize: none;
     }
+ 
 }
 
   @media screen and (max-width: $breakpoint-larger-tablet)
@@ -127,13 +129,7 @@ main {
     @media screen and (max-width: $breakpoint-tablet)
     {
    
-    main #span1 input {
-        justify-content: stretch;
-        width: 20%;
-        height: 20px;
-        margin: 0px;
-        padding: 0px;
-        }
+ 
     main #formain label {
         margin-left: 5%;
         display: inline-block;
@@ -146,62 +142,34 @@ main {
     main #formain #categoría
         {
     margin-left: 15px;
+    width: auto;
     
         }
     main #formain  #foto {
         margin-left: 15px;
         width:80%;
     }
-    main #span1 input {
-        justify-content: stretch;
-        width: 20%;
-        height: 20px;
-        margin: 0px;
-        padding: 0px;
-        margin-left: 15px;
-        }
-        main #span1 input {
-    justify-content: stretch;
-    width: 20%;
-    height: 20px;
-    margin: 0px;
-    padding: 0px;
-    margin-left: 15px;
-        }
     main #span1 button {
-        width: 35%;
-        height: 25px;
-        
-        margin-left: 2px; 
-        }
+      justify-content: stretch;
+      width: 35%;
+      height: 27px;
+      margin: 0px;
+      padding: 0px;
+      margin-left: 0px;
+    }
     }
 
     @media screen and (max-width: $breakpoint-smartphone)
 {
   
-    main #span1 input {
-      justify-content: stretch;
-      width: 30%;
-      height: 20px;
-      margin: 0px;
-      padding: 0px;
-      margin-left: 0px;
-  }
-  main #span1 button {
-    justify-content: stretch;
-    width: 35%;
-    height: 25px;
-    margin: 0px;
-    padding: 0px;
-    margin-left: 0px;
-  }
+ 
   main #span1  {
     justify-content: stretch;
     width: auto;
     height: 20px;
     margin: 0px;
     padding: 0px;
-    margin-left: 15px;
+    ;
     
   }
   main #span2 > button {
