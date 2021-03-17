@@ -228,15 +228,20 @@ nav .item-menu-movil i {
 }
 
 @media screen and (max-width: 870px) {
-  .navmovil {
+  nav .navmovil {
     display: none;
     visibility: hidden;
   }
 
-  #menu-hamburguesa {
+  nav #menu-hamburguesa {
     display: inline-block;
     visibility: visible;
     margin: 12%;
+  }
+
+  nav .navmovil {
+    display: none;
+    visibility: hidden;
   }
 
   #menu-hamburguesa .boton-hamburguesa:hover {
@@ -249,8 +254,9 @@ nav .item-menu-movil i {
     visibility: visible;
   }
 
-  .ulnav2 {
+  nav .ulnav2 {
     padding: 2%;
+    display: inline-block;
   }
 
   #inputbuscador {
@@ -270,7 +276,7 @@ nav .item-menu-movil i {
     margin: 0px;
     display: grid;
     grid-template-rows: 1fr;
-    grid-template-columns: auto 95%;
+    grid-template-columns: auto 90%;
     padding: 0px;
     margin: 0px;
   }
@@ -288,21 +294,28 @@ nav .item-menu-movil i {
     display: none;
   }
 
-  .menu-movil {
+  nav .menu-movil {
+    top: 330px;
     width: 30%;
+    width: 49%;
+    opacity: 80%;
   }
 }
 @media screen and (max-width: 446px) {
-  .menu-movil {
-    background-color: black;
-    position: absolute;
-    top: 270px;
+  nav .menu-movil {
     left: 8px;
-    width: 40%;
+    width: 49%;
+    opacity: 80%;
+    top: 330px;
+  }
+
+  nav .ulnav2 ul #formbuscar label {
     display: none;
     visibility: hidden;
-    opacity: 66%;
-    padding: 15px 0px 15px 15px;
+  }
+
+  nav .ulnav2 ul #formbuscar input {
+    width: 40%;
   }
 }
 @media screen and (max-width: 360px) {
@@ -319,12 +332,12 @@ nav .item-menu-movil i {
   }
 }
 main {
-  background-image: url(../Tarea03_IDAT_Grupo5/Imagenes/fondo.jpg);
+  background-image: url(../Imagenes/fondo.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  color: white;
+  color: black;
   grid-column: 1/5;
   border: solid black;
   font-family: Courier New, Courier, monospace;
@@ -382,8 +395,8 @@ main #span1 button {
       -ms-flex-pack: stretch;
           justify-content: stretch;
   width: 25%;
-  height: 20px;
-  margin: 0px;
+  height: 26 px;
+  margin-left: 2px;
   padding: 0px;
 }
 main #formain {
@@ -403,14 +416,14 @@ main #span2 > button {
   margin: 0.5%;
 }
 main fieldset input:required:focus:valid {
-  background: url("https://assets.digitalocean.com/labs/icons/hand-thumbs-up.svg") no-repeat 95% 50% #9EEB00;
+  background: url("https://assets.digitalocean.com/labs/icons/hand-thumbs-up.svg") no-repeat 95% 50% #e3ffaa;
   background-size: 18px;
   border-color: green;
 }
 main fieldset input:required:focus:invalid {
-  background: url("https://assets.digitalocean.com/labs/icons/exclamation-triangle-fill.svg") no-repeat 95% 50% #FF5240;
+  background: url("https://assets.digitalocean.com/labs/icons/exclamation-triangle-fill.svg") no-repeat 95% 50% #ffaea6;
   background-size: 18px;
-  border-color: red;
+  border-color: #c9b612;
 }
 main #formain #categoría {
   width: 177px;
@@ -444,16 +457,6 @@ main textarea {
   }
 }
 @media screen and (max-width: 528px) {
-  main #span1 input {
-    -webkit-box-pack: stretch;
-        -ms-flex-pack: stretch;
-            justify-content: stretch;
-    width: 20%;
-    height: 20px;
-    margin: 0px;
-    padding: 0px;
-  }
-
   main #formain label {
     margin-left: 5%;
     display: inline-block;
@@ -469,6 +472,7 @@ main textarea {
 
   main #formain #categoría {
     margin-left: 15px;
+    width: auto;
   }
 
   main #formain #foto {
@@ -476,57 +480,18 @@ main textarea {
     width: 80%;
   }
 
-  main #span1 input {
-    -webkit-box-pack: stretch;
-        -ms-flex-pack: stretch;
-            justify-content: stretch;
-    width: 20%;
-    height: 20px;
-    margin: 0px;
-    padding: 0px;
-    margin-left: 15px;
-  }
-
-  main #span1 input {
-    -webkit-box-pack: stretch;
-        -ms-flex-pack: stretch;
-            justify-content: stretch;
-    width: 20%;
-    height: 20px;
-    margin: 0px;
-    padding: 0px;
-    margin-left: 15px;
-  }
-
   main #span1 button {
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
     width: 35%;
-    height: 25px;
-    margin-left: 2px;
+    height: 27px;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 0px;
   }
 }
 @media screen and (max-width: 446px) {
-  main #span1 input {
-    -webkit-box-pack: stretch;
-        -ms-flex-pack: stretch;
-            justify-content: stretch;
-    width: 30%;
-    height: 20px;
-    margin: 0px;
-    padding: 0px;
-    margin-left: 0px;
-  }
-
-  main #span1 button {
-    -webkit-box-pack: stretch;
-        -ms-flex-pack: stretch;
-            justify-content: stretch;
-    width: 35%;
-    height: 25px;
-    margin: 0px;
-    padding: 0px;
-    margin-left: 0px;
-  }
-
   main #span1 {
     -webkit-box-pack: stretch;
         -ms-flex-pack: stretch;
@@ -535,7 +500,6 @@ main textarea {
     height: 20px;
     margin: 0px;
     padding: 0px;
-    margin-left: 15px;
   }
 
   main #span2 > button {

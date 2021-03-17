@@ -7,7 +7,7 @@ $breakpoint-smartphone: 446px;
 
 main {
     @include style-background-main;
-    color: rgb(3, 3, 3);
+    color: black;
     grid-column: 1/5;
     border: $border-style;
     font-family: $main-fontfamily;
